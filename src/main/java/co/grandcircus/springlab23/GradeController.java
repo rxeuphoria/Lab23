@@ -56,7 +56,7 @@ public class GradeController {
 	@PostMapping("/add")
 	public String submitAdd(Grade grade) {
 		dao.create(grade);
-		return "redirect:/detail";
+		return "/detail";
 	}
 
 	@RequestMapping("/grades/delete")
